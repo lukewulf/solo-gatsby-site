@@ -1,0 +1,42 @@
+/* Fonts */
+@font-face {
+    font-family: 'RobotoSlab';
+    src: local('RobotoSlab'), url(../fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+/* Components */
+.heading {
+    color:rgb(41, 41, 41);
+    font-size: 40px;
+}
+
+.container {
+    margin: auto;
+    font-family: RobotoSlab, serif;
+    font-style: normal;
+    padding: 0% 8%;
+}
+
+.nav-link {
+    display: flex;
+    float: right;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-link-item {
+    color: rgb(14, 3, 3);
+    padding-right: 2rem;
+}
+
+.nav-link-item-text {
+    text-decoration: none;
+}
+
+a {
+    color: rgb(85, 82, 82);
+}
+
+.nav-style {
+    height: 4em;
+}
