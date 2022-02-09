@@ -1,0 +1,19 @@
+.projHeading {
+    margin-top: 4rem;
+    padding: 0% 20%;
+}
+
+.projTitle {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.projHeading p {
+    text-align: left;
+    font-style: italic;
+}
+
+.suffix {
+    color: rgb(211, 211, 211);
+}
+

@@ -2,7 +2,6 @@ import * as React from "react"
 import Layout from '../../components/layout'
 import ProjectCard from '../../components/projectCard'
 import { graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
 // style
 const projectContainer = {
@@ -22,14 +21,13 @@ const ProjectsPage = ({data}) => {
         {
           data.allMdx.nodes.map((node) => {
             return(
-              
               <ProjectCard 
                 title={node.frontmatter.title}
                 desc={node.frontmatter.description}
                 img={node.frontmatter.hero_image}
                 alt={node.frontmatter.hero_image_alt}
+                link={node.slug}
               ></ProjectCard>
-
             )
           })
         }

@@ -16,13 +16,17 @@ const imageStyle = {
   width: "40%"
 }
 
+const suffix = {
+  color: "rgb(211, 211, 211)"
+}
+
 // markup
 const AboutPage = () => {
   return (
     <main>
       <Layout pageTitle="About">
         <div style={columnStyle}>
-          <h1>JOIN THE FRAY //</h1>
+          <h1>JOIN THE FRAY <span style={suffix}>//</span></h1>
           <p>My name is Luke and I am a software engineer working out of the Bay Area, 
               I have made this site because I want to pursue my passion of generative art.</p>
 

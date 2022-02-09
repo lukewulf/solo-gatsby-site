@@ -1,21 +1,24 @@
 import * as React from "react"
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import {
     cardStyle,
     projectDescriptionText
 } from './projectCard.module.css'
+import { Link } from "gatsby"
 
-const ProjectCard = ({title, desc, img, alt, children}) => {
+
+const ProjectCard = ({title, desc, img, alt, link, children}) => {
     
     const image = img.childImageSharp.gatsbyImageData
 
     return (
         <div class={cardStyle}>  
-            <GatsbyImage
-                image={image}
-                alt={alt}
-            ></GatsbyImage>
+            <Link to={link}>
+                <GatsbyImage
+                    image={image}
+                    alt={alt}
+                ></GatsbyImage>
+            </Link>
             <h2>{title}</h2>
             <p class={projectDescriptionText}>{desc}</p>
         </div>
