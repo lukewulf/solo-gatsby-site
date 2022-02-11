@@ -26,9 +26,27 @@ module.exports = {
     }, {
       resolve: 'gatsby-source-filesystem',
       options: {
+        "name": "falling-leaves/",
+        "path": "./projects/falling-leaves/gallery",
+      }
+    }, {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "processing/",
+        "path": "./projects/processing/gallery",
+      }
+    }, {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "spirograph/",
+        "path": "./projects/spirograph/gallery",
+      }
+    },  {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         "name": "projects",
         "path": "./projects",
       }
-    }
+    },
   ]
 };

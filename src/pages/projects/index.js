@@ -8,7 +8,7 @@ const projectContainer = {
   display: "flex",
   flexDirection: "row",
   flexWrap: "wrap",
-  justifyContent: "space-between",
+  justifyContent: "flex-start",
   padding: "1rem 0 1rem 0",
 }
 
