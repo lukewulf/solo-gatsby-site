@@ -38,8 +38,8 @@ module.exports = {
     }, {
       resolve: 'gatsby-source-filesystem',
       options: {
-        "name": "spirograph/",
-        "path": "./projects/spirograph/gallery",
+        "name": "wondergraph/",
+        "path": "./projects/wondergraph/gallery",
       }
     },  {
       resolve: 'gatsby-source-filesystem',
@@ -47,6 +47,13 @@ module.exports = {
         "name": "projects",
         "path": "./projects",
       }
-    },
+    }, {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: "0xWRENCH",
+        short_name: "0xWRENCH",
+        icon: "src/images/logoNewIcon.png"
+      }
+    }
   ]
 };

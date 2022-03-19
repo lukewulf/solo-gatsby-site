@@ -15,12 +15,14 @@ const width = 50
 const Layout = ({pageTitle, children}) => {
     return (
         <div className={container}>
-            <title>{pageTitle} | Luke's Site</title>
+
+            <title>{pageTitle}</title>
+            
             <nav className={navStyle}>
                 <Link to="/">
                     <StaticImage
                         alt="Luke's Icon"
-                        src="../images/lukeIcon.png"
+                        src="../images/logo.png"
                         width={width}
                     ></StaticImage>
                 </Link>
